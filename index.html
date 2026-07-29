@@ -1,141 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>EL PISITO ONLINE RADIO 3X3</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#000;
-color:white;
-background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a');
-background-size:cover;
-background-position:center;
-text-align:center;
-}
-
-/* MENU */
-
-nav{
-background:#111;
-padding:18px;
-position:sticky;
-top:0;
-display:flex;
-justify-content:center;
-gap:35px;
-box-shadow:0 0 20px #00ff99;
-z-index:999;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:#00ff99;
-}
-
-/* HERO */
-
-header{
-padding:60px 20px;
-}
-
-.logo{
-width:260px;
-border-radius:50%;
-box-shadow:0 0 35px #00ff99;
-margin-bottom:25px;
-}
-
-h1{
-font-size:50px;
-color:#00ff99;
-margin-bottom:20px;
-}
-
-p{
-font-size:22px;
-margin-bottom:20px;
-}
-
-button{
-padding:18px 50px;
-font-size:24px;
-background:#00ff99;
-border:none;
-border-radius:50px;
-cursor:pointer;
-font-weight:bold;
-box-shadow:0 0 20px #00ff99;
-}
-
-.redes{
-margin-top:40px;
-}
-
-footer{
-margin-top:80px;
-padding:25px;
-background:#111;
-font-size:22px;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:#050505;color:#fff}
+body:before{content:"";position:fixed;inset:0;background:url('https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;z-index:-2}
+body:after{content:"";position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:-1}
+nav{position:sticky;top:0;background:#000;padding:15px;display:flex;justify-content:center;gap:25px;border-bottom:2px solid #19ff7a}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
+nav a:hover{color:#19ff7a}
+.hero{text-align:center;padding:40px 20px}
+.logo{max-width:420px;width:90%;border-radius:50%;box-shadow:0 0 35px #19ff7a}
+h1{font-size:52px;color:#19ff7a;margin:20px 0}
+p{font-size:22px}
+.btn{display:inline-block;margin:25px;padding:18px 50px;background:#19ff7a;color:#000;text-decoration:none;border-radius:50px;font-size:28px;font-weight:bold;box-shadow:0 0 20px #19ff7a}
+.eq{display:flex;justify-content:center;gap:6px;height:70px;margin:25px}
+.eq span{width:8px;background:linear-gradient(#ff00a8,#19ff7a);animation:eq 1s infinite}
+.eq span:nth-child(2){animation-delay:.2s}.eq span:nth-child(3){animation-delay:.4s}.eq span:nth-child(4){animation-delay:.6s}.eq span:nth-child(5){animation-delay:.8s}
+@keyframes eq{0%,100%{height:15px}50%{height:70px}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;padding:25px}
+.card{background:#111;border:1px solid #19ff7a;border-radius:14px;padding:20px;box-shadow:0 0 15px rgba(25,255,122,.3)}
+.card h2{color:#19ff7a;margin-bottom:12px}
+.card ul{padding-left:20px}
+.card li{margin:8px 0}
+.sponsors{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;padding:25px}
+.sponsors div{border:1px solid #19ff7a;padding:15px 20px;border-radius:10px}
+footer{text-align:center;padding:25px;background:#000;border-top:2px solid #19ff7a}
 </style>
-
 </head>
-
 <body>
-
 <nav>
-
-<a href="#">INICIO</a>
-<a href="#">RADIO EN VIVO</a>
-<a href="#">NOTICIAS</a>
-<a href="#">DEPORTES</a>
-<a href="#">TORNEOS</a>
-<a href="#">GALERÍA</a>
-<a href="#">CONTACTO</a>
-
+<a href="#">INICIO</a><a href="#">RADIO EN VIVO</a><a href="#">NOTICIAS</a>
+<a href="#">DEPORTES</a><a href="#">TORNEOS</a><a href="#">GALERÍA</a><a href="#">CONTACTO</a>
 </nav>
-
-<header>
-
-<img class="logo" src="logo.png">
-
-<h1>🎙 EL PISITO ONLINE RADIO 3X3</h1>
-
-<p>La emisora oficial del deporte, la música y el entretenimiento.</p>
-
-<button>▶ ESCUCHAR EN VIVO</button>
-
-<div class="redes">
-
-<h2>@elpisito3x3</h2>
-
+<section class="hero">
+<img class="logo" src="logo.png" alt="Logo">
+<h1>EL PISITO ONLINE RADIO 3X3</h1>
+<p>Tu radio • Tu pasión • Tu canal</p>
+<a class="btn" href="#">▶ ESCUCHAR EN VIVO</a>
+<div class="eq"><span></span><span></span><span></span><span></span><span></span></div>
+</section>
+<section class="grid">
+<div class="card"><h2>📰 Noticias</h2><ul><li>Semifinales Sub17</li><li>MLB</li><li>NBA</li><li>Fútbol Nacional</li></ul></div>
+<div class="card"><h2>📻 Programación</h2><ul><li>08:00 Deportes</li><li>10:00 Música</li><li>14:00 Noticias</li><li>18:00 En Vivo 3x3</li></ul></div>
+<div class="card"><h2>🔴 Ahora en Vivo</h2><p>Transmisiones especiales del deporte, música y entretenimiento.</p></div>
+<div class="card"><h2>📱 Redes</h2><p>Instagram: @elpisito3x3<br>Facebook: El Pisito 3x3<br>YouTube: El Pisito 3x3<br>WhatsApp: +58 424 623 69 99</p></div>
+</section>
+<h2 style="text-align:center;color:#19ff7a">PATROCINANTES</h2>
+<div class="sponsors">
+<div>Danny Burger</div><div>La Marina Fast Food</div><div>PQ Capullo</div><div>Mr Moe Pizza</div><div>Kaymi Gourmet</div>
 </div>
-
-</header>
-
-<footer>
-
-⚽ Deportes | 🎵 Música | 📺 En Vivo
-
-</footer>
-
-</body>
-</html>
+<footer>© 2026 EL PISITO ONLINE RADIO 3X3 - Maracaibo, Venezuela</footer>
+</body></html>
+Prefiero esta respuesta

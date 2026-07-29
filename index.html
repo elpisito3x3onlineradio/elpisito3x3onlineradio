@@ -1,123 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EL PISITO ONLINE RADIO 3X3</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#000;
-color:white;
-text-align:center;
-background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a');
-background-size:cover;
-background-position:center;
-}
-
-header{
-padding:30px;
-}
-
-img{
-width:250px;
-border-radius:50%;
-box-shadow:0 0 30px #00ff99;
-}
-
-h1{
-font-size:45px;
-color:#00ff99;
-}
-
-p{
-font-size:20px;
-}
-
-button{
-padding:20px 50px;
-font-size:25px;
-border:none;
-border-radius:50px;
-background:#00ff99;
-cursor:pointer;
-font-weight:bold;
-}
-
-.redes{
-margin-top:40px;
-font-size:25px;
-}
-
-footer{
-margin-top:60px;
-padding:20px;
-background:#111;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h1>🎙 EL PISITO ONLINE RADIO 3X3</h1>
-
-<p>La emisora oficial del deporte, la música y el entretenimiento.</p>
-
-<button>▶ ESCUCHAR EN VIVO</button>
-
-<div class="redes">
-
-<p>📱 Síguenos</p>
-
-<h2>@elpisito3x3</h2>
-
-</div>
-
-</header>
-
-<footer>
-
-<h3>⚽ Deportes | 🎵 Música | 📺 En Vivo</h3>
-
-</footer>
-
-</body> <nav style="background:#111;padding:15px;position:sticky;top:0;z-index:999;display:flex;justify-content:center;gap:30px;box-shadow:0 0 20px #00ff99;">
-
-<a href="#" style="color:#00ff99;text-decoration:none;font-weight:bold;">INICIO</a>
-
-<a href="#" style="color:white;text-decoration:none;">RADIO EN VIVO</a>
-
-<a href="#" style="color:white;text-decoration:none;">NOTICIAS</a>
-
-<a href="#" style="color:white;text-decoration:none;">DEPORTES</a>
-
-<a href="#" style="color:white;text-decoration:none;">TORNEOS</a>
-
-<a href="#" style="color:white;text-decoration:none;">GALERÍA</a>
-
-<a href="#" style="color:white;text-decoration:none;">CONTACTO</a>
-
-</nav>
-
-</html>
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>EL PISITO ONLINE RADIO 3X3</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -125,163 +12,87 @@ background:#111;
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
 }
 
 body{
-
-background:#050505;
+font-family:Arial,Helvetica,sans-serif;
+background:#000;
 color:white;
-
+background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a');
+background-size:cover;
+background-position:center;
+text-align:center;
 }
 
-/*================== MENU ==================*/
+/* MENU */
 
 nav{
-
-position:fixed;
+background:#111;
+padding:18px;
+position:sticky;
 top:0;
-left:0;
-width:100%;
-background:#000;
 display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 50px;
+justify-content:center;
+gap:35px;
+box-shadow:0 0 20px #00ff99;
 z-index:999;
-box-shadow:0 0 25px #00ff88;
+}
 
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00ff99;
+}
+
+/* HERO */
+
+header{
+padding:60px 20px;
 }
 
 .logo{
-
-display:flex;
-align-items:center;
-gap:15px;
-
+width:260px;
+border-radius:50%;
+box-shadow:0 0 35px #00ff99;
+margin-bottom:25px;
 }
 
-.logo img{
-
-width:65px;
-
+h1{
+font-size:50px;
+color:#00ff99;
+margin-bottom:20px;
 }
 
-.logo h2{
-
-color:#00ff88;
-font-size:26px;
-
+p{
+font-size:22px;
+margin-bottom:20px;
 }
 
-.menu{
-
-display:flex;
-gap:35px;
-
-}
-
-.menu a{
-
-text-decoration:none;
-color:white;
-font-weight:bold;
-transition:.3s;
-
-}
-
-.menu a:hover{
-
-color:#00ff88;
-
-}
-
-.boton{
-
-background:#ff007f;
-padding:15px 30px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-color:white;
-
-}
-
-/*================== HERO ==================*/
-
-.hero{
-
-height:100vh;
-
-background:
-
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-url("fondo.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding-top:90px;
-
-}
-
-.hero img{
-
-width:450px;
-
-filter:drop-shadow(0 0 35px #00ff88);
-
-}
-
-.hero h1{
-
-font-size:70px;
-
-margin-top:30px;
-
-}
-
-.hero p{
-
+button{
+padding:18px 50px;
 font-size:24px;
-
-margin-top:15px;
-
-color:#ddd;
-
+background:#00ff99;
+border:none;
+border-radius:50px;
+cursor:pointer;
+font-weight:bold;
+box-shadow:0 0 20px #00ff99;
 }
 
-.play{
+.redes{
+margin-top:40px;
+}
 
-margin-top:35px;
-
-display:inline-block;
-
-background:#00ff88;
-
-padding:20px 55px;
-
-border-radius:50px;
-
-font-size:30px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-color:black;
-
-box-shadow:0 0 30px #00ff88;
-
+footer{
+margin-top:80px;
+padding:25px;
+background:#111;
+font-size:22px;
 }
 
 </style>
@@ -292,52 +103,39 @@ box-shadow:0 0 30px #00ff88;
 
 <nav>
 
-<div class="logo">
-
-<img src="logo.png">
-
-<h2>EL PISITO RADIO 3X3</h2>
-
-</div>
-
-<div class="menu">
-
-<a href="#">Inicio</a>
-
-<a href="#">Radio</a>
-
-<a href="#">Noticias</a>
-
-<a href="#">Deportes</a>
-
-<a href="#">Torneos</a>
-
-<a href="#">Galería</a>
-
-<a href="#">Contacto</a>
-
-</div>
-
-<a class="boton" href="#">▶ ESCUCHAR EN VIVO</a>
+<a href="#">INICIO</a>
+<a href="#">RADIO EN VIVO</a>
+<a href="#">NOTICIAS</a>
+<a href="#">DEPORTES</a>
+<a href="#">TORNEOS</a>
+<a href="#">GALERÍA</a>
+<a href="#">CONTACTO</a>
 
 </nav>
 
-<section class="hero">
+<header>
 
-<div>
+<img class="logo" src="logo.png">
 
-<img src="logo.png">
+<h1>🎙 EL PISITO ONLINE RADIO 3X3</h1>
 
-<h1>LA MEJOR MÚSICA Y DEPORTES</h1>
+<p>La emisora oficial del deporte, la música y el entretenimiento.</p>
 
-<p>Tu Radio • Tu Pasión • Tu Canal</p>
+<button>▶ ESCUCHAR EN VIVO</button>
 
-<a class="play" href="#">▶ ESCUCHAR EN VIVO</a>
+<div class="redes">
+
+<h2>@elpisito3x3</h2>
 
 </div>
 
-</section>
+</header>
+
+<footer>
+
+⚽ Deportes | 🎵 Música | 📺 En Vivo
+
+</footer>
 
 </body>
-
 </html>
